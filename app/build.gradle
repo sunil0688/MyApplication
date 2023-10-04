@@ -49,6 +49,9 @@ dependencies {
 }
 
 detekt{
+    config = files("$projectDir/detekt-config.yml")
+    // You can add more configurations here if needed
+
     reports {
         xml.enabled = true
         html.enabled = true
